@@ -1,5 +1,9 @@
 # YouTrack user creation autotests
 
+## Требования
+
+Нужен пользователь root с паролем root
+
 ## Запуск
 
 ````
