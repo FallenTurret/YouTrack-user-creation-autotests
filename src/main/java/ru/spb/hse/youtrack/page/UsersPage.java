@@ -25,11 +25,12 @@ public class UsersPage {
         loginNames = new LoginList(driver);
     }
 
-    public void createUser(String login, String password, String passwordConfirmation) {
+    public String createUser(String login, String password, String passwordConfirmation) {
         createUserButton.click();
-        form.addUser(login, password, passwordConfirmation);
+        String result = form.addUser(login, password, passwordConfirmation);
 
         waitTillValid();
+        return result;
     }
 
     public void deleteUser(String login) {
